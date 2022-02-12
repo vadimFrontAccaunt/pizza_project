@@ -1,0 +1,10 @@
+.wrapper {
+	margin: 95% 0 0 0;
+	height: 30px;
+	border: 2px solid grey;
+	font-size: 14px;
+	text-align: end;
+	padding: 14px 100px 0 0;
+	box-shadow: 5px 5px 10px rgb(128, 128, 128);
+	letter-spacing: 0.1em;
+}

@@ -1,0 +1,71 @@
+.header__wrapper {
+	width: 99%;
+	height: 100px;
+	border: 2px solid grey;
+	margin:15px 0px 20px 0px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 10px 10px 10px rgb(128, 128, 128);
+	align-items: center;
+}
+.logoDiv img {
+	height: 100px;
+	width: 100px;
+	margin: 0 0 0 80px;
+	padding: 3px 0 0 0;
+	cursor: pointer;
+}
+.menuDiv ul {
+	display: flex;
+	list-style: none;
+	width: 400px;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.2em;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 80px 0 0;
+}
+.menuDiv ul li:last-child {
+	position: relative;
+}
+.menuDiv ul li {
+	padding: 10px;
+	border-radius: 20px;
+	transition: all 0.5s ease 0s;
+}
+.menuDiv ul li:hover {
+	background-color: grey;
+	color: white;
+	cursor: pointer;
+	transition: all 0.5s ease 0s;
+}
+.menuDiv ul li:last-child:hover {
+	background-color: white;
+}
+.menuDiv ul li img:hover {
+	width: 50px;
+	height: 50px;
+	transition: all 0.5s ease 0s;
+}
+.menuDiv ul li img {
+	transition: all 0.5s ease 0s;
+	height: 40px;
+	width: 40px;
+	transform: scale(-1, 1);
+	margin: 0 0 0 20px;
+}
+.count {
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 50%;
+	background: grey;
+	text-align: center;
+	height: 20px;
+	width: 20px;
+	padding: 3px 0px 0px 04px;
+	position: absolute;
+	top: 30px;
+	right: 4px;
+	transition: all 0.5s ease 0s;
+}
+
