@@ -1,6 +1,6 @@
 import { BaseThunkType, InferActionsTypes } from "./redux-store"
 
-type NewsType = {
+export type NewsType = {
 	photo: string
 	news: string
 	date: string
@@ -14,7 +14,7 @@ type RewiesType = {
 
 let InititalState = {
 	photoPizza: 'https://kartinkin.net/uploads/posts/2021-07/1626838262_33-kartinkin-com-p-ogromnaya-pitstsa-yeda-krasivo-foto-52.jpg' as string,
-	smallPhotoPizza: ["https://storge.pic2.me/upload/504/553e2bca9368d.jpg", "http://s1.1zoom.ru/big3/974/390721-sepik.jpg", "http://s1.1zoom.ru/big3/661/370053-sepik.jpg"] as Array<String>,
+	smallPhotoPizza: ["https://storge.pic2.me/upload/504/553e2bca9368d.jpg", "http://s1.1zoom.ru/big3/974/390721-sepik.jpg", "http://s1.1zoom.ru/big3/661/370053-sepik.jpg"] as Array<string>,
 	news:[
 		{
 			photo:"https://barcook.ru/wp-content/uploads/2021/04/moutai.jpg",
@@ -32,10 +32,6 @@ let InititalState = {
 			date: "02-ЯНВАРЯ"
 		},
 	] as Array<NewsType>,
-	unique: {
-		name: "BigFamily" as string,
-		text: "Big Family – уникальное приложение, пришедшее на замену традиционным системам лояльности. Все, что Вы хотели бы узнать о заведении уже здесь: визуализированное меню, детальное описание блюд и напитков, понятная система бонусации, реальная возможность тратить бонусы вместо денег в избранных заведениях" as String
-	},
 	rewiews:[
 		{
 			photo: "https://terramare.vn.ua/wp-content/uploads/2016/12/user1.jpg",
@@ -67,6 +63,8 @@ const mainPageReducer = (state = InititalState, action: ActionsTypes) : InitialS
 export const actions = {
 	newReducer: () => ({type: 'GET-NEW-REDUCER'} as const)
 }
+
+
 
 
 export default mainPageReducer
