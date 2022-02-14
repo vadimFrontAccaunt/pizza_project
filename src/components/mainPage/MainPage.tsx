@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
-import { getMainPhoto, getNew, getSliderPhoto } from "../../redux/main-selectors";
-import { NewsType } from "../../redux/mainPage-reducer";
+import { getMainPhoto, getNew, getRewiew, getSliderPhoto } from "../../redux/main-selectors";
+import { NewsType, RewiesType } from "../../redux/mainPage-reducer";
 import s from './mainPage.module.css'
 
 const MainPage:React.FC = () => {
 	let photo = useSelector(getMainPhoto)
 	let arrOfSliderPhoto = useSelector(getSliderPhoto)
 	let news = useSelector(getNew)
+	let rewiew = useSelector(getRewiew)
 
 
 	return<div className={s.wrapper}>
@@ -36,9 +37,14 @@ const MainPage:React.FC = () => {
 			</div>
 		</div>
 		<PodLine/>
-		<div className={s.rewiews__wrapper}>
 			<h2>Отзывы</h2>
-		</div>
+			<div className={s.rewiews__wrapper}>
+			{rewiew.map(r => <Rewiews
+				photo = {r.photo}
+				rewie = {r.rewie}
+				name = {r.name}
+			/>)}
+			</div>
 	</div>
 }
 
@@ -54,5 +60,15 @@ export const New:React.FC<NewsType> = (props) => {
 		<img className={s.imgPicture} src={props.photo} alt="" />
 		<div className={s.new}>{props.news}</div>
 		<div className={s.date}>{props.date}</div>
+	</div>
+}
+
+export const Rewiews:React.FC<RewiesType> = (props) => {
+	return<div className={s.wrapper__rewiew}>
+		<div className={s.rewiew__photo}><img src={props.photo} alt="" /></div>
+		<div className={s.text__rewiew_wrapper}>
+			<div className={s.rewName}>{props.name}</div>
+			<div>{props.rewie}</div>
+		</div>
 	</div>
 }

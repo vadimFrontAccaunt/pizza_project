@@ -2,11 +2,13 @@ import { Action, applyMiddleware, combineReducers, createStore } from "redux";
 import thunkMiddleware, { ThunkAction } from "redux-thunk";
 import headerReducer from "./header-reducer";
 import mainPageReducer from "./mainPage-reducer";
+import menuReducer from "./menu-reducer";
 
 
 let rootReducer = combineReducers({
 	mainPage: mainPageReducer,
-	header: headerReducer 
+	header: headerReducer,
+	menu:menuReducer
 })
 
 type RootReducerType = typeof rootReducer;

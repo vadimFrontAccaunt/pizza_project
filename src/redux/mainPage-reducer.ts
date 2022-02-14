@@ -6,7 +6,7 @@ export type NewsType = {
 	date: string
 }
 
-type RewiesType = {
+export type RewiesType = {
 	photo: string
 	rewie: string
 	name: string

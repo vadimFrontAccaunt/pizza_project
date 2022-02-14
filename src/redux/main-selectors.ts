@@ -12,3 +12,6 @@ export const getNew = (state:AppStateType) => {
 export const getRewiew = (state:AppStateType) => {
 	return state.mainPage.rewiews
 }
+export const getMenu = (state:AppStateType) => {
+	return state.menu.pizzas
+} 

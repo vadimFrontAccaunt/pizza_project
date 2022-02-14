@@ -92,7 +92,7 @@ h2 {
 }
 .news {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	padding: 30px;
 	background-color: rgba(128, 128, 128, 0.548);
 	margin: 0 0 1px 0;
@@ -100,13 +100,13 @@ h2 {
 .new__wrapper {
 	position: relative;
 }
-.new__wrapper:first-child{
+.new__wrapper:first-child {
 	transform: rotate(11deg);
 }
-.new__wrapper:nth-child(2){
+.new__wrapper:nth-child(2) {
 	transform: rotate(-7deg);
 }
-.new__wrapper:last-child{
+.new__wrapper:last-child {
 	transform: rotate(5deg);
 }
 .imgPicture {
@@ -127,43 +127,71 @@ h2 {
 }
 .date {
 	position: absolute;
-	top:45px;
+	top: 45px;
 	left: 200px;
 	letter-spacing: 0.1em;
 }
 .sale_wrap {
-  height: 300px;
-  padding: 20px;
-  margin: 0px auto 0;
-  background: #ffffff;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+	height: 300px;
+	padding: 20px;
+	margin: 0px auto 0;
+	background: #ffffff;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 .sale_inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  background: #db5638;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	background: #db5638;
 }
 .sale_block {
-  border: 8px solid #f9f7f6;
-  border-radius: 3px;
-  display: inline-block;
+	border: 8px solid #f9f7f6;
+	border-radius: 3px;
+	display: inline-block;
 }
 .sale_block h3 {
-  line-height: 1;
-  padding: 10px 15px;
-  margin: 5px;
-  background: #2d3549;
-  font-size: 40px;
-  color: #f9f7f6;
-  font-family: 'Days One', sans-serif;
-  transform: rotate(-2deg);
+	line-height: 1;
+	padding: 10px 15px;
+	margin: 5px;
+	background: #2d3549;
+	font-size: 40px;
+	color: #f9f7f6;
+	font-family: 'Days One', sans-serif;
+	transform: rotate(-2deg);
 }
 .sale_block span {
-  display: block;
-  text-transform: uppercase;
-  font-size: 20px;
-  letter-spacing: 2px;
+	display: block;
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.wrapper__rewiew {
+	display: flex;
+	justify-content: space-between;
+	width: 380px;
+	background-color: grey;
+	border-radius: 15px;
+	padding: 10px;
+}
+.rewiews__wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 1200px;
+}
+.rewiew__photo{
+	align-self: center;
+}
+.rewiew__photo img {
+	border-radius: 50px;
+	margin: 0 10px 0 0;
+}
+.text__rewiew_wrapper {
+	letter-spacing: 0.1em;
+}
+.rewName {
+	font-size: 18px;
+	margin: 0 0 5px 0;
 }
