@@ -15,3 +15,17 @@ export const getRewiew = (state:AppStateType) => {
 export const getMenu = (state:AppStateType) => {
 	return state.menu.pizzas
 } 
+export const getCountOfPizza = (state:AppStateType) => {
+	return state.header.countOfPizza
+}
+export const getPromocode = (state:AppStateType) => {
+	return state.header.promocode
+}
+export const getBasket = (state:AppStateType) => {
+	return state.header.basket
+}
+export const getFinalPrice = (state:AppStateType) => {
+	return state.header.finalPrice
+}
+
+

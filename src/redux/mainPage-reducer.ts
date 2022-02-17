@@ -4,6 +4,7 @@ export type NewsType = {
 	photo: string
 	news: string
 	date: string
+	link:string
 }
 
 export type RewiesType = {
@@ -19,17 +20,20 @@ let InititalState = {
 		{
 			photo:"https://barcook.ru/wp-content/uploads/2021/04/moutai.jpg",
 			news: "МАОТАЙ (MOUTAI) КИТАЙСКАЯ ВОДКА",
-			date: "31-ДЕКАБРЯ"
+			date: "31-ДЕКАБРЯ",
+			link:"https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%BE%D1%82%D0%B0%D0%B9"
 		},
 		{
 			photo:"https://www.rbc.ua/static/img/_/n/_novyy_god_7_650x410_1_650x410.jpg",
 			news: "Что делать чтоб не отравиться прошлогодним оливье?",
-			date: "01-ЯНВАРЯ"
+			date: "01-ЯНВАРЯ",
+			link:"https://lite.rbc.ua/rus/stil_zhizni/otravitsya-olive-obratite-vnimanie-sovety-1609391967.html"
 		},
 		{
 			photo:"https://ichi.pro/assets/images/max/724/0*nxebID2rsyBNYzoU",
 			news: "Пицца и React. В чем они похожи?",
-			date: "02-ЯНВАРЯ"
+			date: "02-ЯНВАРЯ",
+			link:"https://evrone.ru/react-vs-vue"
 		},
 	] as Array<NewsType>,
 	rewiews:[

@@ -26,6 +26,7 @@ const MainPage:React.FC = () => {
 				photo = {n.photo}
 				news = {n.news}
 				date = {n.date}
+				link = {n.link}
 			/>)}
 		</div>
 		<PodLine/>
@@ -55,12 +56,12 @@ export const PodLine:React.FC = () => {
 }
 
 export const New:React.FC<NewsType> = (props) => {
-	return<div className={s.new__wrapper}>
+	return<a href={props.link} target="_blank" className={s.new__wrapper}>
 		<img className={s.imgPhoto} src="https://images.vectorhq.com/images/previews/204/polaroid-photo-frame-with-tape-psd-468016.png" alt="" />
 		<img className={s.imgPicture} src={props.photo} alt="" />
 		<div className={s.new}>{props.news}</div>
 		<div className={s.date}>{props.date}</div>
-	</div>
+	</a>
 }
 
 export const Rewiews:React.FC<RewiesType> = (props) => {
